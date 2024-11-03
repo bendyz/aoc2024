@@ -1,7 +1,7 @@
 use std::fs;
 
 
-pub fn read_file_to_string(filename: String) -> String {
+pub fn read_file_to_string(filename: &str) -> String {
     let path = format!("./files/{}", filename);
     fs::read_to_string(path).unwrap()
 }
